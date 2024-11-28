@@ -1,0 +1,15 @@
+.
+├── cli.js
+├── LICENSE
+├── package.json
+├── plopfile.js
+├── README.md
+├── structure.txt
+└── templates
+    ├── AboutPage.js.hbs
+    ├── ContactPage.js.hbs
+    ├── HomePage.js.hbs
+    ├── Page.js.hbs
+    └── Styles.js.hbs
+
+1 directory, 11 files

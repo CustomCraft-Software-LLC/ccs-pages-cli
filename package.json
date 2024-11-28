@@ -1,0 +1,17 @@
+{
+    "name": "react-pages-cli",
+    "version": "1.0.0",
+    "description": "CLI tool for generating React pages with Material-UI",
+    "main": "bin/react-pages-cli.js",
+    "bin": {
+      "react-pages-cli": "./bin/react-pages-cli.js"
+    },
+    "dependencies": {
+      "commander": "^10.0.0",
+      "plop": "^3.1.0"
+    },
+    "scripts": {
+      "start": "node ./bin/react-pages-cli.js"
+    },
+    "license": "BSD-2-Clause"
+}
