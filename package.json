@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "CLI tool for generating React pages with Material-UI",
     "main": "cli.js",
+    "type": "module",
     "bin": {
         "react-pages-cli": "./cli.js"
     },

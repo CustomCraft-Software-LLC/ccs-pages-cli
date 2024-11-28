@@ -1,17 +1,14 @@
 import React from 'react';
 import { Typography, Container, Box } from '@mui/material';
-import useStyles from './{{pascalCase name}}Styles';
 
 const {{pascalCase name}} = () => {
-  const classes = useStyles();
-
   return (
-    <Container className={classes.root}>
-      <Box sx={{ textAlign: 'center' }}>
-        <Typography variant="h3" className={classes.title}>
+    <Container>
+      <Box>
+        <Typography variant="h3">
           {{pascalCase name}} Page
         </Typography>
-        <Typography variant="body1" className={classes.description}>
+        <Typography variant="body1">
           This is the {{pascalCase name}} page where you can provide information specific to this page.
         </Typography>
       </Box>

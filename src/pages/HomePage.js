@@ -1,19 +1,19 @@
 import React from 'react';
 import { Typography, Container, Box } from '@mui/material';
 
-const {{pascalCase name}} = () => {
+const Home = () => {
   return (
     <Container>
       <Box>
         <Typography variant="h3">
-          About Us
+          Welcome to Our Website
         </Typography>
         <Typography variant="body1">
-          Welcome to the About page. Here you will find information about our company.
+          This is the homepage where we showcase the latest updates and features.
         </Typography>
       </Box>
     </Container>
   );
 };
 
-export default {{pascalCase name}};
+export default Home;
