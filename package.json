@@ -4,7 +4,7 @@
     "description": "CLI tool for generating React pages with Material-UI",
     "main": "cli.js",
     "bin": {
-        "react-pages-cli": "./cli.js"
+        "react-pages-cli": "cli.js"
     },
     "dependencies": {
         "@emotion/react": "^11.13.5",
@@ -14,7 +14,7 @@
         "plop": "^3.1.2"
     },
     "scripts": {
-        "start": "node ./bin/react-pages-cli.js"
+        "start": "node ./cli.js"
     },
     "license": "BSD-2-Clause"
 }
