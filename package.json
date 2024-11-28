@@ -1,10 +1,10 @@
 {
-    "name": "react-pages-cli",
+    "name": "ccs-pages-cli",
     "version": "1.0.0",
     "description": "CLI tool for generating React pages with Material-UI",
     "main": "cli.js",
     "bin": {
-        "react-pages-cli": "cli.js"
+        "react-pages-cli": "./cli.js"
     },
     "dependencies": {
         "@emotion/react": "^11.13.5",
