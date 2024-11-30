@@ -7,15 +7,17 @@
 ├── README.md
 ├── src
 │   └── pages
-│       ├── HomePage.js
-│       └── HomeStyles.js
+│       └── HomePage.js
 ├── structure.txt
 └── templates
     ├── AboutPage.js.hbs
+    ├── CareersPage.js.hbs
     ├── ContactPage.js.hbs
+    ├── ErrorPage.js.hbs
     ├── HomePage.js.hbs
     ├── Page.js.hbs
     ├── PricingPage.js.hbs
-    └── Styles.js.hbs
+    ├── Seo.js.hbs
+    └── Services.js.hbs
 
-3 directories, 15 files
+3 directories, 17 files
