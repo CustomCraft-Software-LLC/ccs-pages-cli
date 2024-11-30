@@ -1,9 +1,17 @@
 import React from 'react';
 import { Typography, Container, Box } from '@mui/material';
+import Seo from './Seo';
 
-const {{pascalCase name}} = () => {
+const AboutPage = () => {
   return (
     <Container>
+      <Seo 
+        title="About Us | Example Website" 
+        description="Learn more about Example Website, our mission, and the values that drive us." 
+        keywords="about, company, mission, values, example corp" 
+        image="https://www.example.com/image.jpg"  
+        url="https://www.example.com/about"  
+      />
       <Box>
         <Typography variant="h1">
           About Us
@@ -16,4 +24,4 @@ const {{pascalCase name}} = () => {
   );
 };
 
-export default {{pascalCase name}};
+export default AboutPage;
