@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, Button } from '@mui/material';
+import Seo from './Seo';
 
 const PricingPage = () => {
   const pricingPlans = [
@@ -22,6 +23,13 @@ const PricingPage = () => {
 
   return (
     <Box sx={{ padding: 4, textAlign: 'center' }}>
+      <Seo 
+        title="Pricing | Example Website" 
+        description="Explore our pricing plans at Example Website. Choose a plan that fits your needs and budget." 
+        keywords="pricing, plans, Example Website, affordable, services" 
+        image="https://www.example.com/image.jpg"  
+        url="https://www.example.com/pricing"  
+      />
       <Typography variant="h2" sx={{ marginBottom: 2 }}>
         Pricing Plans
       </Typography>

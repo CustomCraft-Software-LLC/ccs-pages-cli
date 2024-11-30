@@ -18,6 +18,6 @@
     ├── Page.js.hbs
     ├── PricingPage.js.hbs
     ├── Seo.js.hbs
-    └── Services.js.hbs
+    └── ServicesPage.js.hbs
 
 3 directories, 17 files

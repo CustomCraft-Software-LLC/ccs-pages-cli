@@ -1,9 +1,17 @@
 import React from 'react';
 import { Typography, Container, Box } from '@mui/material';
+import Seo from './Seo';
 
 const ServicesPage = () => {
   return (
     <Container>
+      <Seo 
+        title="Services | Example Website" 
+        description="Discover the wide range of services offered by Example Website. We provide solutions tailored to your needs." 
+        keywords="services, solutions, Example Website, tailored solutions, professional services" 
+        image="https://www.example.com/image.jpg"  
+        url="https://www.example.com/services"  
+      />
       <Box>
         <Typography variant="h1" gutterBottom>
           Our ServicesPage

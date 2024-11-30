@@ -1,9 +1,17 @@
 import React from 'react';
 import { Typography, Container, Box } from '@mui/material';
+import Seo from './Seo';
 
 const {{pascalCase name}} = () => {
   return (
     <Container>
+      <Seo 
+        title="{{pascalCase name}} | Example Website" 
+        description="{{pascalCase name}} page for Example Website. Learn more about what we offer and how we can help you." 
+        keywords="{{camelCase name}}, Example Website, services, solutions" 
+        image="https://www.example.com/{{camelCase name}}-image.jpg"  
+        url="https://www.example.com/{{kebabCase name}}"  
+      />
       <Box>
         <Typography variant="h1">
           {{pascalCase name}} Page

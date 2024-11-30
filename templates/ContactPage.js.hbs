@@ -1,9 +1,17 @@
 import React from 'react';
 import { Typography, Container, Box, TextField, Button } from '@mui/material';
+import Seo from './Seo';
 
 const ContactPage = () => {
   return (
     <Container>
+      <Seo 
+        title="Contact Us | Example Website" 
+        description="Learn more about Example Website, our mission, and the values that drive us." 
+        keywords="about, company, mission, values, example corp" 
+        image="https://www.example.com/image.jpg"  
+        url="https://www.example.com/about"  
+      />
       <Box>
         <Typography variant="h1">
           Contact Us
