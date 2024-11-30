@@ -1,0 +1,36 @@
+import React from 'react';
+import { Typography, Container, Box } from '@mui/material';
+import Seo from './Seo';
+
+const ServicesPage = () => {
+  return (
+    <Container>
+      <Seo 
+        title="Services | Example Website" 
+        description="Discover the wide range of services offered by Example Website. We provide solutions tailored to your needs." 
+        keywords="services, solutions, Example Website, tailored solutions, professional services" 
+        image="https://www.example.com/image.jpg"  
+        url="https://www.example.com/services"  
+      />
+      <Box>
+        <Typography variant="h1" gutterBottom>
+          Our ServicesPage
+        </Typography>
+        <Typography variant="body1">
+          We offer a wide range of services to meet your needs. Whether you're looking for business solutions, creative services, or something in between, we have you covered.
+        </Typography>
+        <Typography variant="body1">
+          - Service 1: Web Development
+        </Typography>
+        <Typography variant="body1" paragraph>
+          - Service 2: Digital Marketing
+        </Typography>
+        <Typography variant="body1" paragraph>
+          - Service 3: Consulting
+        </Typography>
+      </Box>
+    </Container>
+  );
+};
+
+export default ServicesPage;
