@@ -2,14 +2,20 @@
 ├── cli.js
 ├── LICENSE
 ├── package.json
+├── package-lock.json
 ├── plopfile.js
 ├── README.md
+├── src
+│   └── pages
+│       ├── HomePage.js
+│       └── HomeStyles.js
 ├── structure.txt
 └── templates
     ├── AboutPage.js.hbs
     ├── ContactPage.js.hbs
     ├── HomePage.js.hbs
     ├── Page.js.hbs
+    ├── PricingPage.js.hbs
     └── Styles.js.hbs
 
-1 directory, 11 files
+3 directories, 15 files

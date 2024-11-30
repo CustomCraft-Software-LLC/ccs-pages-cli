@@ -1,0 +1,95 @@
+import React from 'react';
+import { Box, Typography, Card, CardContent, Button } from '@mui/material';
+
+const PricingPage = () => {
+  const pricingPlans = [
+    {
+      title: 'Basic',
+      price: '$10/month',
+      features: ['Feature 1', 'Feature 2', 'Feature 3'],
+    },
+    {
+      title: 'Pro',
+      price: '$20/month',
+      features: ['Feature A', 'Feature B', 'Feature C'],
+    },
+    {
+      title: 'Enterprise',
+      price: 'Contact Us',
+      features: ['Custom Feature 1', 'Custom Feature 2', 'Custom Feature 3'],
+    },
+  ];
+
+  return (
+    <Box sx={{ padding: 4, textAlign: 'center' }}>
+      <Typography variant="h2" sx={{ marginBottom: 2 }}>
+        Pricing Plans
+      </Typography>
+      <Typography variant="body1" sx={{ marginBottom: 4 }}>
+        Choose a plan that suits your needs.
+      </Typography>
+
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: { xs: 'column', sm: 'row' },
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: 4,
+          flexWrap: 'wrap',
+        }}
+      >
+        {pricingPlans.map((plan) => (
+          <Box
+            key={plan.title}
+            sx={{
+              flex: '1 1 calc(33.333% - 16px)',
+              maxWidth: 300,
+              textAlign: 'center',
+            }}
+          >
+            <Card>
+              <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <Typography variant="h5" sx={{ marginBottom: 2 }}>
+                  {plan.title}
+                </Typography>
+                <Typography variant="h4" sx={{ marginY: 2 }}>
+                  {plan.price}
+                </Typography>
+                <Box
+                  component="ul"
+                  sx={{
+                    padding: 0,
+                    listStyle: 'none',
+                    marginBottom: 3,
+                    textAlign: 'left',
+                  }}
+                >
+                  {plan.features.map((feature, index) => (
+                    <Box
+                      component="li"
+                      key={index}
+                      sx={{ marginBottom: 1, typography: 'body1' }}
+                    >
+                      {feature}
+                    </Box>
+                  ))}
+                </Box>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  fullWidth
+                  sx={{ textTransform: 'none' }}
+                >
+                  Choose {plan.title}
+                </Button>
+              </CardContent>
+            </Card>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  );
+};
+
+export default PricingPage;

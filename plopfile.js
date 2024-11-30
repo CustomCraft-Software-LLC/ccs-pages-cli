@@ -18,12 +18,7 @@ export default function (plop) {
           type: 'add',
           path: `src/pages/{{pascalCase name}}Page.js`,
           templateFile: path.resolve('templates/{{pascalCase name}}Page.js.hbs'),
-        },
-        {
-          type: 'add',
-          path: `src/pages/{{pascalCase name}}Styles.js`,
-          templateFile: path.resolve('templates/Styles.js.hbs'),
-        },
+        }
       ];
     },
   });
