@@ -1,4 +1,5 @@
 import path from 'path';
+import fs from 'fs';
 
 export default function (plop) {
   plop.setGenerator('Page', {
@@ -21,7 +22,10 @@ export default function (plop) {
       },
     ],
     actions: (data) => {
+      const actions = [];
       const pageName = data.name;
+      const seoFilePath = 'src/components/Seo.js';
+
       let templateFile;
 
       if (pageName === 'Custom') {
@@ -30,13 +34,21 @@ export default function (plop) {
         templateFile = `${pageName}Page.js.hbs`;
       }
 
-      return [
-        {
+      actions.push({
+        type: 'add',
+        path: `src/pages/{{pascalCase name}}Page.js`,
+        templateFile: path.resolve(`templates/${templateFile}`),
+      });
+
+      if (!fs.existsSync(seoFilePath)) {
+        actions.push({
           type: 'add',
-          path: `src/pages/{{pascalCase name}}Page.js`,
-          templateFile: path.resolve(`templates/${templateFile}`),
-        },
-      ];
+          path: seoFilePath,
+          templateFile: path.resolve('templates/Seo.js.hbs'),
+        });
+      }
+
+      return actions;
     },
   });
 }
