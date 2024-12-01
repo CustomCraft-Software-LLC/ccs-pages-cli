@@ -5,7 +5,7 @@
     "main": "cli.js",
     "type": "module",
     "bin": {
-        "react-pages-cli": "./cli.js"
+        "ccs-pages-cli": "./cli.js"
     },
     "dependencies": {
         "@emotion/react": "^11.13.5",
