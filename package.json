@@ -1,6 +1,6 @@
 {
     "name": "ccs-pages-cli",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "CLI tool for generating React pages with Material-UI",
     "main": "cli.js",
     "type": "module",
