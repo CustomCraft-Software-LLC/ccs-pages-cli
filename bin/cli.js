@@ -15,7 +15,7 @@ const program = new Command();
 program
   .name('ccs-pages-cli')
   .description('Generate React pages with MUI styling')
-  .version('1.0.6');
+  .version('1.0.5');
 
 program
   .command('generate')
@@ -28,19 +28,19 @@ program
           name: 'pageName',
           message: 'Select the page you want to generate:',
           choices: [
-            'Home',
-            'About',
-            'Contact',
-            'Services',
-            'Pricing',
-            'Careers',
-            'Error',
-            'Custom',
+            'HomePage',
+            'AboutPage',
+            'ContactPage',
+            'ServicesPage',
+            'PricingPage',
+            'CareersPage',
+            'ErrorPage',
+            'Page',
           ],
         },
       ]);
 
-      const pageTemplatePath = path.resolve(__dirname, '../templates', `${pageName}Page.js.hbs`);
+      const pageTemplatePath = path.resolve(__dirname, '../templates', `${pageName}.js.hbs`);
       const seoTemplatePath = path.resolve(__dirname, '../templates', 'Seo.js.hbs');
 
       if (!fs.existsSync(pageTemplatePath)) {
@@ -61,7 +61,7 @@ program
         seo: seoOutput,
       });
 
-      const outputPath = path.resolve(__dirname, '../src/pages', `${pageName}Page.js`);
+      const outputPath = path.resolve(__dirname, '../src/pages', `${pageName}.js`);
       fs.writeFileSync(outputPath, output);
 
       const seoOutputPath = path.resolve(__dirname, '../src/components', 'Seo.js');
