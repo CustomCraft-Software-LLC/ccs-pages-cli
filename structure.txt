@@ -1,13 +1,14 @@
 .
-├── cli.js
+├── bin
+│   └── cli.js
 ├── LICENSE
 ├── package.json
 ├── package-lock.json
 ├── plopfile.js
 ├── README.md
 ├── src
+│   ├── components
 │   └── pages
-│       └── HomePage.js
 ├── structure.txt
 └── templates
     ├── AboutPage.js.hbs
@@ -20,4 +21,4 @@
     ├── Seo.js.hbs
     └── ServicesPage.js.hbs
 
-3 directories, 17 files
+5 directories, 16 files
